@@ -12,7 +12,8 @@ namespace Datastructures.MaxHeaps.Tests
             var input = new []{ 2, 5, 1, 6, 3 };
             var correct = new []{ 6, 5, 1, 2, 3 };
 
-            var result = MaxHeap.MaxHeapify(input);
+            var heap = new MaxHeap(input);
+            var result = heap.GetSorted();
 
             Assert.AreEqual(correct, result);
         }
