@@ -14,7 +14,7 @@ namespace Datastructures.MaxHeaps.Tests
 
             var result = MaxHeap.MaxHeapify(input);
 
-            Assert.AreEqual(result, input);
+            Assert.AreEqual(correct, result);
         }
     }
 }
